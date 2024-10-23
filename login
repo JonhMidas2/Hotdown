@@ -1,13 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
-from utils import os, benedictus_ascii_art, clear_screen, logger
+from utils import os, clear_screen, logger
 
 
 hotmartsession = requests.Session()
 
 
 def credentials():
-  benedictus_ascii_art()
   username = input('email: ')
   password = input('senha: ')
   clear_screen()
